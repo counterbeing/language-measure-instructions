@@ -1,0 +1,21 @@
+'scopeName': 'source.mi'  
+'name': 'Measure Instruction'  
+'fileTypes': ['mi']  
+'patterns': [  
+  {
+    'match': '(NUMERATOR|DENOMINATOR|RESULT|OR)'
+    'name': 'constant.numeric.integer.hexadecimal.python'
+  },
+  {
+    'match': '(([a-z]|_|\d)+:)'
+    'name': 'keyword.operator'
+  },
+	{
+    'match': '^---$'
+    'name': 'keyword other special-method'
+  }
+	{
+    'match': '\{\{.*\}\}'
+    'name': 'variable language self'
+  }
+]

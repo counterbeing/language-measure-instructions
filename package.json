@@ -1,0 +1,9 @@
+{
+  "name": "language-measure-instructions",
+  "version": "0.0.1",
+  "description": "Syntax highlighting for Measure Instructions",
+  "engines": {
+      "atom": "*",
+      "node": "*"
+    }
+}
