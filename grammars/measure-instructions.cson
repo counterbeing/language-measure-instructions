@@ -3,11 +3,11 @@
 'fileTypes': ['mi']  
 'patterns': [  
   {
-    'match': '(NUMERATOR|DENOMINATOR|RESULT|OR)'
+    'match': '(NUMERATOR_REASON|DENOMINATOR_REASON|FAILURE_REASON|RESULT|OR)'
     'name': 'constant.numeric.integer.hexadecimal.python'
   },
   {
-    'match': '(([a-z]|_|\d)+:)'
+    'match': '(([a-z]|_|\\d)+:)'
     'name': 'keyword.operator'
   },
 	{
