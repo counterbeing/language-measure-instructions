@@ -3,19 +3,23 @@
 'fileTypes': ['mi']  
 'patterns': [  
   {
-    'match': '(NUMERATOR_REASON|DENOMINATOR_REASON|FAILURE_REASON|RESULT|OR)'
-    'name': 'constant.numeric.integer.hexadecimal.python'
+    'match': '^(MEASURE|NUMERATOR_REASON|DENOMINATOR|FAILURE_REASON|RESULT)'
+    'name': 'constant language'
+  },
+  {
+    'match': '(^|\\w)(AND|OR)'
+    'name': 'keyword'
   },
   {
     'match': '(([a-z]|_|\\d)+:)'
-    'name': 'keyword.operator'
+    'name': 'variable other'
   },
 	{
     'match': '^---$'
-    'name': 'keyword other special-method'
+    'name': 'entity section'
   }
 	{
     'match': '\{\{.*\}\}'
-    'name': 'variable language self'
+    'name': 'string interpolated'
   }
 ]
